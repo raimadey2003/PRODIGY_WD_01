@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sophisticated Landing Page</title>
+  <link rel="stylesheet" href="landing_page.css" />
+</head>
+<body>
+
+  <!-- Newsletter Modal -->
+  <div class="modal" id="newsletter-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>Join Our Newsletter</h2>
+      <p>Get exclusive updates delivered straight to your inbox!</p>
+      <input type="email" id="newsletter-email" placeholder="Enter your email" />
+      <button onclick="subscribeNewsletter()">Subscribe</button>
+      <p id="newsletter-msg"></p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Logo" class="logo-img" />
+      <span>ElegantBrand</span>
+    </div>
+    
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <div class="hero-text">
+      <h1>Discover Elegance in Simplicity</h1>
+      <p>Unleashing modern design with sophistication and functionality.</p>
+      <a href="#features" class="btn">Explore Features</a>
+    </div>
+  </header>
+
+  <!-- Image Carousel -->
+  <section class="carousel-section">
+    <div class="carousel" id="carousel">
+      <img src="images/slide1.jpg" alt="Slide 1">
+      <img src="images/slide2.jpg" alt="Slide 2">
+      <img src="images/slide3.jpg" alt="Slide 3">
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="reveal">
+    <h2>Why Choose Us?</h2>
+    <!-- <center> -->
+    <p>Experience excellence through intuitive design and thoughtful interaction.</p>
+    <p>We believe in combining innovation with elegance. Our team is dedicated to </p>
+    <p>crafting user experiences that are not only functional but also visually </p>
+    <p>captivating. Every element is designed with precision to ensure a seamless and</p> 
+    <p>engaging journey for your customers.From responsive layouts to cutting-edge features,</p> 
+    <p>we aim to exceed expectations and deliver solutions that drive results.</p> 
+    <p>Choose us for a blend of creativity, performance, and sophistication in everything we build.</p>
+    <!-- </center> -->
+  </section>
+  
+
+  <!-- About Section -->
+  <section id="about" class="reveal">
+    <h2>Our Story</h2>
+    <p>We are a team of creators passionate about innovation and aesthetic perfection.</p>
+    <p>It all started with a vision—to make technology beautiful and accessible. From humble</p> 
+    <p>beginnings, we have grown into a creative force, delivering digital experiences </p>
+    <p>that resonate with modern audiences.Our journey is driven by curiosity, collaboration,</p> 
+    <p>and a commitment to quality. We don’t just build interfaces; we craft stories that connect</p> 
+    <p>people to brands in meaningful ways. Our mission is to inspire, innovate, and leave a lasting</p> 
+    <p>impact with everything we create.</p>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="reveal">
+    <h2>Contact Us</h2>
+    <form id="contact-form" onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="form-msg"></p>
+    </form>
+  </section>
+
+  <script src="landing_page.js"></script>
+</body>
+</html>
+
+ 
