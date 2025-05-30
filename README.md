@@ -1,4 +1,4 @@
-## 📌 Task - 01: Responsive Landing Page  
+## 📌 Responsive Landing Page  
 **Internship at Prodigy InfoTech as a web developer**
 
 This project features a fully responsive and interactive landing page with:
